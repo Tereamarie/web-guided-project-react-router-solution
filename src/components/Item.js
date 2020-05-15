@@ -1,4 +1,5 @@
 import React from 'react'
+// We'll need quite a few imports from react-router-dom
 import {
   Route,
   NavLink,
@@ -35,12 +36,18 @@ export default function Item(props) {
           <h4>${item.price}</h4>
         </div>
       </div>
+
       <nav className='item-sub-nav'>
+        {/* Here go the NavLinks to `<current path>/description` and `<current path>/shipping` */}
+
         {/* <Link to={`/item-list/${item.id}`}>The story</Link>
         <Link to={`/item-list/${item.id}/shipping`}>Shipping</Link> */}
         <NavLink to={`${url}/description`}>Description</NavLink>
         <NavLink to={`${url}/shipping`}>Shipping</NavLink>
       </nav>
+
+      {/* Here go the Routes for `<current path>/shipping` and `<current path>/description` */}
+      {/* These Routes should render <ItemShipping /> and <ItemDescription /> respectively */}
       <Switch>
         <Route path={`${path}/shipping`}>
           <ItemShipping item={item} />
