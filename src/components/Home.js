@@ -1,10 +1,12 @@
 import React from 'react'
+// We'll need React Router's own version of the History API
 import { useHistory } from 'react-router-dom'
 
 export default function Home() {
   const history = useHistory()
-  console.log(history)
 
+  // Build a click handler that will imperatively
+  // navigate us to <website base URL>/item-list
   const routeToShop = () => {
     console.log('Submitting...')
     history.push('/item-list')
