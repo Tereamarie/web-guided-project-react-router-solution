@@ -50,10 +50,10 @@ export default function Item(props) {
       {/* These Routes should render <ItemShipping /> and <ItemDescription /> respectively */}
       <Switch>
         <Route path={`${path}/shipping`}>
-          <ItemShipping item={item} />
+          <ItemShipping shipping={item.shipping} />
         </Route>
         <Route path={`${path}/description`}>
-          <ItemDescription item={item} />
+          <ItemDescription description={item.description} />
         </Route>
       </Switch>
     </div>

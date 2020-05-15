@@ -1,11 +1,11 @@
 import React from 'react'
 
 export default function ItemShipping(props) {
-  const { item } = props
+  const { shipping } = props
 
   return (
     <div>
-      <p className='item-description'>{item.shipping}</p>
+      <p className='item-description'>{shipping}</p>
     </div>
   )
 }
