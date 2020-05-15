@@ -1,12 +1,11 @@
-import React from "react";
+import React from 'react'
 
-function ItemShipping(props) {
-  console.log("this is in itemshipping", props);
+export default function ItemShipping(props) {
+  const { item } = props
+
   return (
     <div>
-      <p className="item-description">{props.item.shipping}</p>
+      <p className='item-description'>{item.shipping}</p>
     </div>
-  );
+  )
 }
-
-export default ItemShipping;

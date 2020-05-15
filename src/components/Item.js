@@ -10,15 +10,18 @@ import ItemDescription from './ItemDescription'
 import ItemShipping from './ItemShipping'
 
 export default function Item(props) {
-  // we use this hook to grab information about the way React Router matched this route.
+  // We get ALL items through props. We'll use the URL to find out which item is the one to show.
+  const { items } = props
+
+  // We use this hook to grab information about the way React Router matched this route.
   const { path, url } = useRouteMatch()
   // we use this hook to grab they dynamic parts of the path (:itemID).
   const { itemID } = useParams()
-  const { items } = props
 
-  // this guards against a crash (the data is not available instantaneously)
+  // This guards against a crash (the data is not available instantaneously)
   if (!items.length) return 'Getting your item...'
 
+  // Beware! The ids are integers, whereas URL parameters are strings.
   const item = items.find(item => item.id == itemID)
 
   return (

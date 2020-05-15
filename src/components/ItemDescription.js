@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 
-function ItemDescription(props) {
+export default function ItemDescription(props) {
+  const { item } = props
+
   return (
     <div>
-      <p className="item-description">{props.item.description}</p>
+      <p className="item-description">{item.description}</p>
     </div>
-  );
+  )
 }
-
-export default ItemDescription;
