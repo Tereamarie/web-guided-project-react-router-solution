@@ -30,6 +30,7 @@ export default function App(props) {
           <Link to='/item-list'>Shop</Link>
         </div>
       </nav>
+
       <Switch>
         <Route path={'/item-list/:itemID'}>
           <Item items={stock} />
