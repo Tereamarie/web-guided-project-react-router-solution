@@ -5,11 +5,11 @@ import { useHistory } from 'react-router-dom'
 export default function Home() {
   const history = useHistory()
 
-  // Build a click handler that will imperatively
-  // navigate us to <website base URL>/item-list
+  // 👉 STEP 5 - Build a click handler that will imperatively
+  // navigate us to <website base URL>/items-list
   const routeToShop = () => {
     console.log('Submitting...')
-    history.push('/item-list')
+    history.push('/items-list')
     // history.goBack()
   }
 
