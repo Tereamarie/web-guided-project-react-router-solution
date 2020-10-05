@@ -26,8 +26,6 @@ export default function Item(props) {
   // This guards against a crash (the data is not available instantaneously)
   if (!items.length) return 'Getting your item...'
 
-
-
   return (
     <div className='item-wrapper'>
       <div className='item-header'>
