@@ -1,4 +1,4 @@
-import React from 'react' // with React 17 this import will be gone
+import React from 'react'
 // We'll need a Link and the useRouteMatch hook from 'react-router-dom'
 import { Link, useRouteMatch } from 'react-router-dom'
 
