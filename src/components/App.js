@@ -33,7 +33,7 @@ export default function App(props) {
       </nav>
 
       {/* 👉 STEP 4 - Build a Switch with a Route for each of the components imported at the top */}
-      {/* INSTRUCTOR: do it without a Switch, and using the `exact` prop on the `/` route first */}
+      {/* INSTRUCTOR: start without Switch and using the `exact` prop on the `/` route */}
       <Switch>
         <Route path={'/items-list/:itemID'}>
           <Item items={stock} />
