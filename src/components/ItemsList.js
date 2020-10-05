@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react' // with React 17 this import will be gone
 // We'll need a Link and the useRouteMatch hook from 'react-router-dom'
 import { Link, useRouteMatch } from 'react-router-dom'
 
 export default function ItemsList(props) {
   const { items } = props
 
-  // We'll grab the current URL using the hook
+  // We'll grab the current URL pathname using the hook
   const { url } = useRouteMatch()
 
   return (

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react' // with React 17 this import will be gone
 // We'll need quite a few imports from react-router-dom
 import {
   Route,
@@ -40,10 +40,14 @@ export default function Item(props) {
 
       <nav className='item-sub-nav'>
         {/* 👉 STEP 8 - Here go the NavLinks to `<current url>/shipping` and `<current url>/description` */}
-        {/* <Link to={`/items-list/${item.id}`}>The story</Link>
-        <Link to={`/items-list/${item.id}/shipping`}>Shipping</Link> */}
         <NavLink to={`${url}/description`}>Description</NavLink>
         <NavLink to={`${url}/shipping`}>Shipping</NavLink>
+
+        {/* INSTRUCTOR: do without the hook and explain how bad it is with long pathnames */}
+        {/*
+        <Link to={`/items-list/${item.id}`}>The story</Link>
+        <Link to={`/items-list/${item.id}/shipping`}>Shipping</Link>
+        */}
       </nav>
 
       {/* 👉 STEP 9 - Here go the Routes for `<current path>/shipping` and `<current path>/description` */}
@@ -55,6 +59,12 @@ export default function Item(props) {
         <Route path={`${path}/description`}>
           <ItemDetails text={item.description} />
         </Route>
+
+        {/* INSTRUCTOR: do without the hook and explain how bad it is with long paths */}
+        {/*
+        <Route path="/items-list/shipping"> etc </Route>
+        <Route path="/items-list/description"> etc </Route>
+        */}
       </Switch>
       {/* 👉 STEP 10 - Shorten paths and urls with `useRouteMatch` hook */}
     </div>

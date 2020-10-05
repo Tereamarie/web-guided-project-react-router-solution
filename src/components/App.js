@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-// 👉 STEP 2 - React Router imports
+import React, { useState, useEffect } from 'react' // with React 17 this import will be gone
+// 👉 STEP 2 - React Router imports (Route, Link and Switch)
 import { Route, Link, Switch } from 'react-router-dom'
 // Components used for the different routes
 import Home from './Home'
@@ -33,6 +33,7 @@ export default function App(props) {
       </nav>
 
       {/* 👉 STEP 4 - Build a Switch with a Route for each of the components imported at the top */}
+      {/* INSTRUCTOR: do it without a Switch, and using the `exact` prop on the `/` route first */}
       <Switch>
         <Route path={'/items-list/:itemID'}>
           <Item items={stock} />
@@ -47,6 +48,7 @@ export default function App(props) {
         </Route>
       </Switch>
 
+      {/* INSTRUCTOR: only if there's time, demo older syntax for routes */}
       {/* <Route
         exact
         path='/items-list'

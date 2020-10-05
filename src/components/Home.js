@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react' // with React 17 this import will be gone
 // We'll need React Router's own version of the History API
 import { useHistory } from 'react-router-dom'
 
@@ -7,10 +7,10 @@ export default function Home() {
 
   // 👉 STEP 5 - Build a click handler that will imperatively
   // navigate us to <website base URL>/items-list
+  /* INSTRUCTOR: you could explain this is "imperative", vs. the "declarative" Link */
   const routeToShop = () => {
     console.log('Submitting...')
     history.push('/items-list')
-    // history.goBack()
   }
 
   return (

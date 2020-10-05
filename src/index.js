@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react' // with React 17 this import will be gone
 import { render } from 'react-dom'
 
 // Importing the top-level component
@@ -8,6 +8,9 @@ import App from './components/App'
 import './styles.less'
 
 // 👉 STEP 1 - Import React Router's Router
+/*
+  INSTRUCTOR: you could explain there's a hashRouter that uses the URL hash for routing
+*/
 import { BrowserRouter as Router } from 'react-router-dom'
 
 render(
