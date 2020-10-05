@@ -27,7 +27,7 @@ Motivation: we can navigate the browser using JavaScript alone!
 
 ## Following Along and Catching Up
 
-* The instructor should make sure students clone this repo without forking it.
+* The instructor should make sure students clone the starter repo without forking it.
 * The instructor must make commits to a `lecture` branch and push them regularly (or use a script to do it).
 * If the students work on their own named branch, `main` is kept clean so they can re-do the demo later.
 * In order to catch up, the students can reset their branch to the instructor's last pushed commit:
