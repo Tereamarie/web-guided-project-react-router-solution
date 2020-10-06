@@ -4,6 +4,8 @@
 
 Motivation: we can navigate the browser using JavaScript alone!
 
+(Do not spend more than ten minutes on this or you risk running out of time)
+
 * Introduce the old `location` object in the console and demo `location.reload()`.
 * Introduce the newer History API and demo its `go`, `back`, `forward` and `pushState` methods.
 * With the History API we can manipulate the pathname of the URL without causing browser reload.
