@@ -32,8 +32,7 @@ export default function App(props) {
         </div>
       </nav>
 
-      {/* 👉 STEP 4 - Build a Switch with a Route for each of the components imported at the top */}
-      {/* INSTRUCTOR: start without Switch and using the `exact` prop on the `/` route */}
+      {/* 👉 STEP 4 - Build Routes, and a Route for each of the components imported at the top */}
       <Routes>
         <Route path={'items-list/:itemID/*'} element={<Item items={stock} />} />
         <Route path='/items-list' element={<ItemsList items={stock} />} />

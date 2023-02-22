@@ -5,7 +5,6 @@ export default function Home() {
   const navigate = useNavigate()
 
   // 👉 STEP 5 - Build a click handler that will imperatively navigate us to /items-list
-  /* INSTRUCTOR: you could explain this is "imperative", vs. the "declarative" Link */
   const routeToShop = () => {
     console.log('Submitting...')
     navigate('items-list')

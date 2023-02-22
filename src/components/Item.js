@@ -15,7 +15,7 @@ export default function Item(props) {
   // 👉 STEP 7 - We need to pull item from items, using a parameter in the URL (:itemID)
   // Beware! The ids are integers, whereas URL parameters are strings.
   // Beware! The JSX is expecting 'item' to exist instantly!
-  // we use this hook to grab they dynamic parts of the path (:itemID).
+  // we need useParams to grab the dynamic parts of the path (:itemID).
   const { itemID } = useParams()
   const item = items.find(item => item.id == itemID)
 

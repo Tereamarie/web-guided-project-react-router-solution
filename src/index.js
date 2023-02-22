@@ -7,7 +7,7 @@ import App from './components/App'
 // Importing the styles
 import './styles.css'
 
-// 👉 STEP 1 - Import React Router's Router
+// 👉 STEP 1 - Import Router and wrap the app
 import { BrowserRouter } from 'react-router-dom'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
