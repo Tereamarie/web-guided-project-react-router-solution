@@ -9,7 +9,6 @@ import Item from './Item'
 // Dummy data
 import data from '../data'
 
-
 export default function App(props) {
   const [stock, setStock] = useState([])
 
@@ -18,6 +17,7 @@ export default function App(props) {
       // this function simulates getting data asynchronously, like axios.get(<URL>)
       return Promise.resolve({ success: true, data })
     }
+    // fetching the stock after first render
     fetchStock().then(res => setStock(res.data))
   }, [])
 
