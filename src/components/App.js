@@ -34,9 +34,9 @@ export default function App(props) {
 
       {/* 👉 STEP 4 - Build Routes, and a Route for each of the components imported at the top */}
       <Routes>
-        <Route path={'items-list/:itemID/*'} element={<Item items={stock} />} />
-        <Route path='/items-list' element={<ItemsList items={stock} />} />
         <Route path='/' element={<Home />} />
+        <Route path='items-list' element={<ItemsList items={stock} />} />
+        <Route path={'items-list/:itemID/*'} element={<Item items={stock} />} />
       </Routes>
     </div>
   )
